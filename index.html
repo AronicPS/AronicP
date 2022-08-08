@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aronic</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="Products.html">Product</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+        </div>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="" width="100px" height="100px">
+        </div>
+
+        <div class="text-logo">
+            <H2>Aronic</H2>
+            <h6>Copyright @ 2022</h6>
+        </div>
+
+    </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/slide1.jpg"  width="1000px" height="400px">
+            <div class="text"></div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/slide2.jpg"  width="1000px" height="400px">
+            <div class="text"></div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/slide3.jpg" 
+            width="1000px" height="400px">
+            <div class="text"></div>
+        </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <form action="">
+        <article>
+            <div class="Prd">
+                <div class="prd-1-BG">
+                    <img src="images/Product_BG_1.jpg" alt="" width="1000px" height="400px">
+                </div>
+                <div class="prd-1">
+                    <img src="images/perm-russia-february-photo-dark-bottle-burberry-men-s-perfume-dark-background-close-up-perm-russia-february-photo-215494384.jpg"
+                        alt="" width="310px" height="400px">
+                </div>
+                <div class="info">
+                    <h2>Mr.Burberry</h3>
+                        <hr>
+                        <h4>Nhóm hương :
+                            Bạch đậu khấu, Hoắc hương, Quế, Quả bưởi
+                        </h4>
+                        <h4>Phong cách :
+                            Lịch lãm, Nam tính, Cuốn hút
+                        </h4>
+                        <h4>Xuất xứ :
+                            Anh, Pháp
+                        </h4>
+                        <h4>Năm phát hành :
+                            2017
+                        </h4>
+                </div>
+                <div class="icon">
+                    <h1>࿇</h1>
+                </div>
+            </div>
+            
+
+            <div class="Prd-2">
+                <div class="prd-2-BG">
+                    <img src="images/Product_BG_1.jpg" alt="" width="1000px" height="400px">
+                </div>
+                <div class="prd-2">
+                    <img src="images/prd2.png"
+                        alt="" width="390px" height="400px">
+                </div>
+                <div class="info-2">
+                    <h2>Coco Noir</h3>
+                        <hr>
+                        <h4>Nhóm hương :
+                            Hương của cam bergamot, Hoắc hương
+                        </h4>
+                        <h4>Phong cách :
+                            Lịch lãm, Nam tính, Cuốn hút
+                        </h4>
+                        <h4>Xuất xứ :
+                            Anh, Pháp, Mĩ
+                        </h4>
+                        <h4>Năm phát hành :
+                            2021
+                        </h4>
+                </div>
+                <div class="icon-2">
+                    <h1>࿇</h1>
+                </div>
+            </div>
+        </article>
+
+    </form>
+    <footer>
+        <ul class="footer">
+            <div class="foot">
+                <h4>Aronic</h4>
+                <h5>Copyright @ 2022 Hazl, Inc.</h5>
+                <a href="">Legal Stuff</a> |
+                <a href="">Privacy Policy</a> |
+                <a href="">Security</a>
+            </div>
+        </ul>
+    </footer>
+</body>
+
+
+</html>

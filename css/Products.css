@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("");
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background: rgba(26, 26, 26, 0.834);
+    text-align: center;
+    line-height: 30px;
+    border-top: double;
+    border-color: white;
+    position: relative;
+    top: 100px;
+}
+
+footer ul.footer .foot a, h4 ,h5{ 
+    color: white;
+}
+
+header {
+    width: auto;
+    height: 130px;
+    background-image: url("images/360_F_413205019_Z3qZ6ojSQAbrIsPf5X3A3HUrJTddyYON.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(80%); */
+}
+
+.logo {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-style: outset;
+    border-color: rgb(81, 80, 80);
+    border-radius: 4%;
+    opacity: 90%;
+}
+
+.text-logo {
+    color: rgba(255, 255, 255, 0.707);
+    text-align: left;
+    margin-right: 1000px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 180px;
+    font-size: larger;
+    line-height: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    padding-left: 930px;
+}
+
+.menu>li {
+    float: left;
+    position: relative;
+    list-style-type: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+li>a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 35px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.578);
+    
+}
+
+.menu>li>a:hover {
+    /* border: solid;
+    border-color: rgb(255, 255, 255); */
+    text-decoration: underline;
+    /* background-color: white; */
+    color: rgb(255, 255, 255);
+    /* border-radius: 2%;
+    border-width: 8px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    transition: linear 0.3s;
+}
+
+.A-Items>h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+ul.Product-Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+ul.Product-Items li {
+    flex-basis: 32%;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-right: 55px;
+}
+
+ul.Product-Items .product {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    
+}
+
+ul.Product-Items .product:hover {
+    border-style: inset;
+    border-radius: 2%;
+    border: none;
+    outline: none;
+    transition: 0.3s linear;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.532);
+}
+
+ul.Product-Items .product .buy-items:hover {
+    background-color: rgba(226, 222, 222, 0.642);
+    transition: 0.3s linear;
+}
+
+ul.Product-Items img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+ul.Product-Items .product a {
+    text-decoration: none;
+    line-height: 55px;
+    color: rgba(0, 0, 0, 0.921);
+}
+
+ul.Product-Items .product .buy-items {
+    text-align: right;
+    padding-right: 22px;
+    font-size: large;
+    border: solid rgba(85, 85, 85, 0.622);
+    border-radius: 5%;
+    margin-left: 220px;
+    scale: 70%;
+} 
+
+/* @media only screen and (min-width: 768px){
+    ul.Product-Items .product .buy-items {
+        scale: 50%;
+    }
+} */
+
